@@ -46,25 +46,33 @@ const ResetPass =  () => {
     }
   return (
     <div>
-      <section className="h-screen mx-[100px]">
-        <div className="container h-full px-6 py-24">
-          <div className="g-6 flex h-full flex-wrap items-center justify-center lg:justify-between">
-            {/* <!-- Left column container with background--> */}
-            <div className="mb-12 md:mb-0 md:w-8/12 lg:w-6/12">
-              <img src={login_bg} className="w-full " alt="Phone image" />
-            </div>
-
+       <section className="h-screen  flex justify-center pl-0 items-center ">
+        {/* <div className="container h-full px-6 py-24"> */}
+        <div className="mt-15  text-black rounded-2xl  flex flex-col w-full md:w-1/3 items-center max-w-4xl transition duration-1000 ease-in"
+      style={{
+        boxShadow: '0 0 10px 10px rgba(0, 0, 0, 0.4)', 
+          }}>
+       
+         <div 
+         style={{
+          backgroundImage: 'url("https://img.freepik.com/free-vector/network-connection-background-gradient_23-2148879893.jpg?size=626&ext=jpg&ga=GA1.2.919220695.1703776412&semt=ais")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          minHeight: '200px',
+          // Increase the minHeight here to make the background image visible
+        }}  className='w-full rounded-2xl'
+         >
+          <p style={{ color: '#fff', fontSize: '24px' }} className=' mx-24 mt-9'>Reset your password</p>
+  <p style={{ color: '#fff', fontSize: '14px' }} className=' mx-10'>
+  Please enter the new password you want to use
+  </p>
+   </div>
             {/* <!-- Right column container with form --> */}
-            <div className="md:w-8/12 lg:ml-6 lg:w-5/12">
+            <div className="mt-3 ml-1">
               <form onSubmit={handleSubmit}>
                 {/* <!-- Email input --> */}
-                <h1 className=" text-xl font-extrabold font-mono mb-3">
-                  Reset your password
-                </h1>
-                <h1 className=" mb-3 font-mono">
-                  Please enter the new password you want to use
-                </h1>
-                <div className="flex outline-none border-l-4 border-[#0057A8] p-4 bg-[#f7f7f7] py-3 px-3 mb-3 w-[100%] sm:w-[100%]">
+
+                <div className="flex outline-none border-l-4  border-[#0057A8] p-4 bg-[#f7f7f7] py-3 px-3 mb-3 w-[100%] sm:w-[100%]">
                   <div className=" mt-[6px] opacity-[30%] mr-2">
                     {<RiLockPasswordFill />}
                   </div>
@@ -96,8 +104,8 @@ const ResetPass =  () => {
                 {/* <TERipple rippleColor="light" className="w-full"> */}
                 <button
                   type="submit"
-                  className="inline-block w-full rounded bg-[#7620ff] px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                >
+                  className="inline-block w-full rounded mb-3 bg-[#573592] px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] 
+                  transition duration-150 ease-in-out hover:bg-[#3c206d] ">
                   Save New Password
                 </button>
                 {/* </TERipple> */}
@@ -105,7 +113,7 @@ const ResetPass =  () => {
               </form>
             </div>
           </div>
-        </div>
+       
       </section>
     </div>
   );

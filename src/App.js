@@ -5,7 +5,7 @@ import Landing from "./screens/Landing.jsx";
 import Signup from "./screens/Signup.jsx";
 import { Route, Routes } from "react-router-dom";
 import Login from "./screens/Login.jsx";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ResetPass from "./screens/ResetPass.jsx";
 import ForgotPass from "./screens/ForgotPass.jsx";
